@@ -20,3 +20,12 @@ Run grunt karma
 grunt karma
 
 All tests pass!
+
+Run grunt server
+grunt server
+
+** If you get a message like the one below--
+Running "server" task
+>> The `server` task has been deprecated. Use `grunt serve` to start a server.
+
+run `grunt serve`
