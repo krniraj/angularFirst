@@ -17,12 +17,12 @@ To install these you can simply run npm install.
 
 Run grunt karma
 
-grunt karma
+`grunt karma`
 
 All tests pass!
 
 Run grunt server
-grunt server
+`grunt server`
 
 ** If you get a message like the one below--
 Running "server" task
