@@ -1,18 +1,22 @@
 <!doctype html>
-<html class="no-js">
+<html class="full" lang="en">
+<!-- The full page image background will only work if the html has the custom class set to it! Don't delete it! -->
   <head>
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+     <!-- Custom CSS for the 'Full' Template -->
+   
     <!-- endbuild -->
   </head>
   <body ng-app="firstAppApp">
@@ -22,20 +26,9 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">firstApp</h3>
-      </div>
+        <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+      
     </div>
 
 
